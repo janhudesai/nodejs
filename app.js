@@ -7,7 +7,7 @@ Version 1.0
 - Rudimentary Page Templates using RegEx
 - REST Client Calling Go REST API 
 
-NodeJS-Enabled Standing Gumball
+NodeJS-Enabled Standing Gumball test
 Model# M102988
 Serial# 1234998871109
 
@@ -68,6 +68,7 @@ var order = function(req, res) {
                         data: {  "CountGumballs": count },
                         headers:{"Content-Type": "application/json"} 
                     };
+                    // test!
                     client.put( machine, args,
                         function(data, response_raw) {
                             console.log(data);
